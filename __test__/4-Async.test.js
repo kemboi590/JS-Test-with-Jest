@@ -21,6 +21,7 @@ const api = new API();
 //   ]);
 // });
 
+// .then() syntax
 test("fetchProducts should return an array of products", () => {
   return api
     .fetchProducts()

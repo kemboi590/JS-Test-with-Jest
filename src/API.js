@@ -12,7 +12,6 @@ class API {
     });
   }
 
-
   fetchProducts() {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -23,6 +22,19 @@ class API {
           { name: "Date", price: 3.0 },
         ]);
       }, 1000);
+    });
+  }
+
+  fetchProductsAfter20Sec() {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve([
+          { name: "Apple", price: 1.0 },
+          { name: "Banana", price: 0.5 },
+          { name: "Cherry", price: 2.0 },
+          { name: "Date", price: 3.0 },
+        ]);
+      }, 20000);
     });
   }
 }
